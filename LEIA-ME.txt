@@ -1,0 +1,21 @@
+OUTSIDE - LOJA COMERCIAL
+
+COMO ABRIR
+Abra o arquivo index.html no navegador.
+
+COMO PERSONALIZAR
+- Troque o nome da loja e os textos nos arquivos HTML.
+- Altere os títulos, descrições e preços dos produtos em catalogo.html e detalhes-1.html até detalhes-6.html.
+- Substitua as imagens na pasta imagens, mantendo os nomes dos arquivos.
+- Mude cores e tamanhos no arquivo css/estilo.css.
+
+IMAGENS
+fundo.jpg: imagem de fundo da página inicial
+produto1.jpg até produto6.jpg: imagens dos produtos
+
+PÁGINAS
+index.html: página inicial
+catalogo.html: catálogo com seis produtos
+detalhes-1.html até detalhes-6.html: detalhes de cada produto
+
+O botão de compra é apenas um exemplo. O formulário de promoções exibe uma mensagem na página, mas não envia ou armazena e-mails.
