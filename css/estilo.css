@@ -1,0 +1,50 @@
+/* Estilos simples da loja Viva Moda */
+body { margin: 0; font-family: 'Nunito', Arial, sans-serif; background-color: #f5f4f1; color: #383833; }
+
+/* Página inicial */
+.inicio { min-height: 100vh; background-image: url('../imagens/fundo.jpg'); background-size: cover; background-position: center; }
+.cabecalho-inicio { padding: 25px; background-color: #e7e5df; text-align: center; }
+.logo { color: #383833; font-size: 36px; font-weight: bold; text-decoration: none; text-transform: uppercase; }
+.logo span { text-shadow: 2px 2px 3px #b9b6ae; }
+.logo .letra-diferente { color: #7c7568; }
+.caixa-inicio { width: 60%; max-width: 600px; margin: 100px auto; padding: 35px; background-color: #faf9f6; border: 2px solid #b9b6ae; border-radius: 20px; text-align: center; }
+.botao-grande { display: inline-block; margin-top: 15px; padding: 18px 35px; border-radius: 25px; background-color: #6e6a60; color: white; font-size: 20px; text-decoration: none; }
+
+/* Barra de navegação */
+.barra-navegacao { padding: 18px; background-color: #e7e5df; text-align: center; }
+.nome-loja { margin-right: 20px; color: #383833; font-size: 22px; font-weight: bold; text-decoration: none; }
+.botao-voltar, button, .botao { display: inline-block; padding: 10px 18px; border: none; border-radius: 20px; background-color: #6e6a60; color: white; text-decoration: none; cursor: pointer; }
+.busca { display: inline-block; margin-left: 20px; }
+input { padding: 9px; border: 1px solid #b9b6ae; }
+
+/* Catálogo */
+.container { width: 90%; margin: 25px auto; }
+.titulo-pagina { text-align: center; }
+.grade-produtos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.card-produto { padding: 12px; border: 1px solid #dedbd3; background-color: white; text-align: center; }
+.card-produto img { width: 100%; height: 220px; object-fit: cover; }
+.card-produto h2 { margin-bottom: 5px; font-size: 20px; }
+.card-produto p { min-height: 24px; }
+
+/* Página de detalhes */
+.produto-detalhe { display: flex; align-items: center; justify-content: center; gap: 30px; padding: 25px; background-color: white; text-align: center; }
+.imagem-detalhe { width: 300px; height: 280px; object-fit: cover; transition: transform 0.5s; }
+.imagem-detalhe:hover { transform: scale(1.1); }
+.preco { font-size: 20px; font-weight: bold; }
+.botao-comprar { animation: piscar 1s infinite; }
+@keyframes piscar { 50% { background-color: #383833; } }
+.formulario-promocoes { width: 60%; max-width: 500px; margin: 25px auto; padding: 20px; background-color: #e7e5df; text-align: center; }
+.formulario-promocoes form { text-align: left; }
+.formulario-promocoes input[type="email"] { width: 90%; margin: 8px 0; }
+.termos { display: block; margin: 12px 0; }
+.mensagem-sucesso { display: none; color: #526447; font-weight: bold; }
+.mensagem-sucesso:target { display: block; }
+.rodape { padding: 15px; background-color: #383833; color: white; text-align: center; }
+
+@media (max-width: 700px) {
+    .caixa-inicio, .formulario-promocoes { width: 80%; }
+    .grade-produtos { grid-template-columns: repeat(2, 1fr); }
+    .produto-detalhe { flex-direction: column; }
+    .barra-navegacao { line-height: 2.5; }
+    .busca { margin-left: 0; }
+}
